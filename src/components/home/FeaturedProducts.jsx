@@ -7,7 +7,7 @@ import { Navigation } from "swiper/modules";
 
 const FeaturedProducts = ({ featuredProducts }) => {
   return (
-    <div className="mt-4 featuredProducts py-5 px-lg-4 rounded-4">
+    <div className=" py-3 px-lg-4 rounded-4">
       <Swiper
         navigation={true}
         modules={[Navigation]}

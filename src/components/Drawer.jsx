@@ -41,7 +41,9 @@ export default function Drawer() {
                 }`}
                 onClick={handleClose}
               >
-                Search
+                {({ isActive }) => (
+                <span className={isActive ? "fw-bold" : ""}> Search</span>
+              )}
               </NavLink>
               <CiSearch size="24px" />
             </div>
@@ -57,7 +59,9 @@ export default function Drawer() {
                 })}
                 onClick={handleClose}
               >
-                {name}
+                {({ isActive }) => (
+                <span className={isActive ? "fw-bold" : ""}> {name}</span>
+              )}
               </NavLink>
             ))}
           </div>
@@ -72,7 +76,9 @@ export default function Drawer() {
                   }`}
                   onClick={handleClose}
                 >
-                  Profile
+                  {({ isActive }) => (
+                <span className={isActive ? "fw-bold" : ""}> Profile</span>
+              )}
                 </NavLink>
                 <GoPerson size="24px" />
               </div>
@@ -85,7 +91,9 @@ export default function Drawer() {
                   }`}
                   onClick={handleClose}
                 >
-                  Orders
+                  {({ isActive }) => (
+                <span className={isActive ? "fw-bold" : ""}> Orders</span>
+              )}
                 </NavLink>
                 <CiShoppingCart size="24px" />
               </div>

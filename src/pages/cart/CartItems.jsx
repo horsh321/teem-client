@@ -48,7 +48,7 @@ export default function CartItems() {
                 key={item._id}
               >
                 <div
-                  className="d-flex flex-wrap flex-md-nowrap gap-2 gap-lg-4"
+                  className="d-md-flex flex-wrap flex-md-nowrap gap-2 gap-lg-4"
                   style={{ maxWidth: "700px" }}
                 >
                   <Link
@@ -60,7 +60,7 @@ export default function CartItems() {
                       alt={item.name}
                       width={130}
                       height={130}
-                      className="object-fit-cover"
+                      className="object-fit-fill"
                     />
                   </Link>
                   <div>

@@ -38,7 +38,9 @@ export default function Nav() {
                   `/products/${name.toLowerCase().replace(/\s+/g, "")}`,
               })}
             >
-              {name}
+              {({ isActive }) => (
+                <span className={isActive ? "fw-bold" : ""}> {name}</span>
+              )}
             </NavLink>
           ))}
         </div>

@@ -87,18 +87,18 @@ const featuredProducts = useMemo(() => featured, [featured]);
               </span>
             </div>
           </div>
-          {errCat && (
-            <Alert variant="danger" className="mt-5">
+        </div>
+        {errCat && (
+            <Alert variant="danger" className="mt-5 px-3">
               {errCat?.response?.data?.error || errCat.message}
             </Alert>
           )}
-        </div>
         <DisplayCategories categories={categories} />
         <div style={{ marginTop: "6rem" }}>
           <Headings
             text={
               <>
-                <span className="fw-bold text-black me-2">Featured.</span>Take a
+                <span className="fw-bold text-black mb-1 me-2">Featured.</span>Take a
                 look at our featured products.
               </>
             }
@@ -107,7 +107,7 @@ const featuredProducts = useMemo(() => featured, [featured]);
             size="1.5rem"
           />
           {errFeat && (
-            <Alert variant="danger" className="mt-5">
+            <Alert variant="danger" className="mt-5 px-3">
               {errFeat?.response?.data?.error || errFeat.message}
             </Alert>
           )}
@@ -134,7 +134,7 @@ const featuredProducts = useMemo(() => featured, [featured]);
             size="1.5rem"
           />
           {error && (
-            <Alert variant="danger" className="mt-5">
+            <Alert variant="danger" className="mt-5 px-3">
               {error?.response?.data?.error || error.message}
             </Alert>
           )}
@@ -173,11 +173,11 @@ const featuredProducts = useMemo(() => featured, [featured]);
               </>
             }
             color="var(--bg-zinc-600)"
-            extra={`${styles.heroAdjust} mb-4 px-3`}
+            extra={`${styles.heroAdjust} mb-1 px-3`}
             size="1.5rem"
           />
           {err && (
-            <Alert variant="danger" className="mt-5">
+            <Alert variant="danger" className="mt-5 px-3">
               {err?.response?.data?.error || err.message}
             </Alert>
           )}
